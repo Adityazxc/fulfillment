@@ -1,0 +1,469 @@
+CRITICAL - 2023-12-17 09:56:25 --> Class 'APP\Controllers\BaseController' not found
+in APPPATH\Controllers\Page.php on line 4.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fulfilment\\app\\Controllers\\Page.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Page')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Page')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Page')
+ 6 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Page', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 09:56:51 --> Class 'APP\Controllers\BaseController' not found
+in APPPATH\Controllers\Page.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fulfilment\\app\\Controllers\\Page.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Page')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Page')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Page')
+ 6 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Page', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 09:56:51 --> Class 'APP\Controllers\BaseController' not found
+in APPPATH\Controllers\Page.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fulfilment\\app\\Controllers\\Page.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Page')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Page')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Page')
+ 6 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Page', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 09:58:04 --> Class 'APP\Controllers\BaseController' not found
+in APPPATH\Controllers\Page.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fulfilment\\app\\Controllers\\Page.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Page')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Page')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Page')
+ 6 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Page', true)
+ 7 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 10:06:09 --> Invalid file: "about.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('about.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 3 APPPATH\Controllers\Page.php(8): view('about')
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 10:19:45 --> Invalid file: "about.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('about.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 3 APPPATH\Controllers\Page.php(8): view('about')
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 11:03:07 --> syntax error, unexpected '"></a>' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+in APPPATH\Views\about.php on line 46.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 3 APPPATH\Controllers\Page.php(8): view('about')
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:32:50 --> Undefined variable: users
+in APPPATH\Views\about.php on line 93.
+ 1 APPPATH\Views\about.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: users', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 93, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(8): view('about')
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:33:45 --> Undefined variable: users
+in APPPATH\Views\about.php on line 93.
+ 1 APPPATH\Views\about.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: users', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 93, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(8): view('about')
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:35:22 --> Undefined variable: users
+in APPPATH\Views\about.php on line 93.
+ 1 APPPATH\Views\about.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: users', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 93, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(8): view('about')
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:35:45 --> Class 'APP\Controllers\UserModel' not found
+in APPPATH\Controllers\Page.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:36:41 --> Call to undefined method APP\Controllers\Page::findAll()
+in APPPATH\Controllers\Page.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:51:58 --> Class 'APP\Controllers\UserModel' not found
+in APPPATH\Controllers\Page.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:52:26 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\UserModel.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-17 12:54:37 --> Class 'App\Models\UserModel' not found
+in APPPATH\Controllers\Page.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 12:57:23 --> Class 'App\Models\UserModel' not found
+in APPPATH\Controllers\Page.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(914): APP\Controllers\Page->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-17 12:59:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'fullfilment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#9 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-17 12:59:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-17 13:03:48 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'adit'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'adit', '', 'fullfilment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#9 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-17 13:03:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-17 13:07:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'fullfilment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#9 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-17 13:07:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-17 13:07:16 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fullfilment' in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'password_baru', 'fullfilment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#9 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fullfilment' in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->about()
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#8 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-17 13:07:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fullfilment'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Page.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 14:44:29 --> Undefined variable: user
+in APPPATH\Views\about.php on line 121.
+ 1 APPPATH\Views\about.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 121, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(23): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 14:45:33 --> syntax error, unexpected '{'
+in APPPATH\Views\about.php on line 121.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 3 APPPATH\Controllers\Page.php(23): view('about', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:14:12 --> Trying to get property 'no_inbound' of non-object
+in APPPATH\Views\about.php on line 121.
+ 1 APPPATH\Views\about.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'no_inbound\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 121, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(23): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:14:36 --> Trying to get property 'no_inbound' of non-object
+in APPPATH\Views\about.php on line 121.
+ 1 APPPATH\Views\about.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'no_inbound\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 121, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(23): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:17:11 --> Invalid file: "Page/about.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Page/about.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Page/about', [], true)
+ 3 APPPATH\Controllers\Page.php(23): view('Page/about', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:17:23 --> Trying to get property 'no_inbound' of non-object
+in APPPATH\Views\about.php on line 121.
+ 1 APPPATH\Views\about.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'no_inbound\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 121, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(23): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:18:13 --> Trying to get property 'processed_by_name' of non-object
+in APPPATH\Views\about.php on line 130.
+ 1 APPPATH\Views\about.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'processed_by_name\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 130, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(23): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:20:32 --> Invalid file: "Page/about.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Page/about.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Page/about', [], true)
+ 3 APPPATH\Controllers\Page.php(23): view('Page/about', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:23:00 --> Undefined variable: date
+in APPPATH\Controllers\Page.php on line 22.
+ 1 APPPATH\Controllers\Page.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: date', 'C:\\xampp\\htdocs\\fulfilment\\app\\Controllers\\Page.php', 22, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:24:46 --> Trying to get property 'no_inbound' of non-object
+in APPPATH\Views\about.php on line 122.
+ 1 APPPATH\Views\about.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'no_inbound\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(25): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:25:33 --> Trying to get property 'no_inbound' of non-object
+in APPPATH\Views\about.php on line 122.
+ 1 APPPATH\Views\about.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'no_inbound\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(25): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 22:26:38 --> Trying to get property 'no_inbound' of non-object
+in APPPATH\Views\about.php on line 122.
+ 1 APPPATH\Views\about.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'no_inbound\' of non-object', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\about.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('about', [], true)
+ 5 APPPATH\Controllers\Page.php(25): view('about', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->about()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-17 23:17:03 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Controllers\Page.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->detail_inbound('', 'INV001')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
