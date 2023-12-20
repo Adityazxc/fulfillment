@@ -14,11 +14,18 @@ class Page extends BaseController
         $this->userModel = new UserModel();
     }
     public function home()
-    {
+    {        
         $db = \Config\Database::connect();
+        // table users
         $query = $db->table('users')
         ->select('name, role');
         $data['users']=$query->get()->getResult();
+
+        // table inbound
+        $queryInbound=$db->table('inbound')
+        ->selectSum('qty','total_qty');
+        $data['inbound']=$queryInbound->get()->getResult();
+        
         return view('home',$data);
 
     }
