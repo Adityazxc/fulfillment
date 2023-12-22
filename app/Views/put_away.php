@@ -36,7 +36,7 @@
 
         <!-- Your main content goes here -->
         <!-- navbar -->
-        
+        <?php include(APPPATH . 'Views/widgets/navbar.php'); ?>
 
         <!-- Add Date Range Picker -->
         <label for="dateRange">Filter by Date Range:</label>

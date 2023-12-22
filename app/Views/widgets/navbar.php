@@ -43,10 +43,7 @@
     .dropdown:hover .dropbtn {
         background-color: #3e8e41;
     }
-    #avatar{
-            width: 40px;
-            
-        }
+  
 </style>
 
 <nav class="navbar navbar-expand-md bg-white">
@@ -77,7 +74,7 @@
                 <h3>Asep</h3>
             </li>
             <li class="nav-item">
-            <a href="#" ><img class="avatar" src="<?= base_url('images/avatar.png')?>" ></a>
+            <a href="#" ><img class="avatar" src="<?= base_url('images/avatar.png')?>" width="50px"></a>
             </li>
             <li>
                 <div class="dropdown" style="float:right;">
