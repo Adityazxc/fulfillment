@@ -2,10 +2,22 @@
     /* Tambahkan gaya CSS berikut untuk menambahkan padding pada nav-item */
     .nav-item {
         padding: 0 10px 0 53px;
+        float: right;
         /* Sesuaikan nilai padding sesuai kebutuhan Anda */
     }
 
-    .dropbtn {                 
+    .container-navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;       
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    .dropbtn {
         font-size: 16px;
         border: none;
         cursor: pointer;
@@ -19,7 +31,7 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        right: 0;        
+        right: 0;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
@@ -43,49 +55,58 @@
     .dropdown:hover .dropbtn {
         background-color: #3e8e41;
     }
-  
+
+    .name-user {
+        color: #000;
+        font-family: Noto Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .name-role {
+        color: #000;
+        font-family: Noto Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 </style>
 
-<nav class="navbar navbar-expand-md bg-white">
-    <!-- Brand -->
-    <?php if ($navbarConfig['show_back_link']): ?>
-        <a class="navbar-brand" href="<?= base_url($navbarConfig['back_link']) ?>">Back</a>
-    <?php endif; ?>
 
-    <!-- Toggler/collapsible Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Brand -->
+<?php if ($navbarConfig['show_back_link']): ?>
+    <a class="navbar-brand" href="<?= base_url($navbarConfig['back_link']) ?>">Back</a>
+<?php endif; ?>
 
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<!-- Navbar links -->
 
-        <h3>
-            <?= $navbarConfig['page_title'] ?>
-        </h3>
+<ul class="container-navbar">
+    <li class="nav-item">
+        <img src="<?= base_url('images/notification.png') ?>" alt="notification">
+    </li>
+    <li class="nav-item">
+        <div class="row">
+            <h3 class="name-user">Asep</h3>
+        </div>
 
-
-        <!-- Links on the right side -->
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <img src="<?= base_url('images/notification.png') ?>" alt="notification">
-            </li>
-            <li class="nav-item">
-                <h3>Asep</h3>
-            </li>
-            <li class="nav-item">
-            <a href="#" ><img class="avatar" src="<?= base_url('images/avatar.png')?>" width="50px"></a>
-            </li>
-            <li>
-                <div class="dropdown" style="float:right;">
-                    <button class="dropbtn">></button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <div class="row">
+            <h3 class="name-role">Admin</h3>
+        </div>
+    </li>
+    <li class="nav-item">
+        <img src="<?= base_url('images/avatar.png') ?>" alt="notification" width="50px">
+    </li>
+    <li>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </li>
+</ul>

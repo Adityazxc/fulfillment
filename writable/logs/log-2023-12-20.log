@@ -1,0 +1,259 @@
+ERROR - 2023-12-20 02:36:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'fulfillment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-12-20 02:36:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_away`, MAX(putaway.date_processed) as date_process, `users`.`name` as `processed_by_name`, `users_approve`.`name` as `approve_by_name`
+FROM `putaway`
+JOIN `users` ON `putaway`.`processed_by` = `users`.`id_user`
+JOIN `users` as `users_approve` ON `putaway`.`approve_by` = `users_approve`.`id_user`
+GROUP BY `no_put_away`', [], false)
+ 3 APPPATH\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-20 02:37:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'fulfillment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-12-20 02:37:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_away`, MAX(putaway.date_processed) as date_process, `users`.`name` as `processed_by_name`, `users_approve`.`name` as `approve_by_name`
+FROM `putaway`
+JOIN `users` ON `putaway`.`processed_by` = `users`.`id_user`
+JOIN `users` as `users_approve` ON `putaway`.`approve_by` = `users_approve`.`id_user`
+GROUP BY `no_put_away`', [], false)
+ 3 APPPATH\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-20 02:37:21 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fulfillment' in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'password_baru', 'fulfillment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fulfillment' in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-12-20 02:37:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fulfillment'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_away`, MAX(putaway.date_processed) as date_process, `users`.`name` as `processed_by_name`, `users_approve`.`name` as `approve_by_name`
+FROM `putaway`
+JOIN `users` ON `putaway`.`processed_by` = `users`.`id_user`
+JOIN `users` as `users_approve` ON `putaway`.`approve_by` = `users_approve`.`id_user`
+GROUP BY `no_put_away`', [], false)
+ 3 APPPATH\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-20 02:37:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'passwordbaru', 'fulfillment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-12-20 02:37:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_away`, MAX(putaway.date_processed) as date_process, `users`.`name` as `processed_by_name`, `users_approve`.`name` as `approve_by_name`
+FROM `putaway`
+JOIN `users` ON `putaway`.`processed_by` = `users`.`id_user`
+JOIN `users` as `users_approve` ON `putaway`.`approve_by` = `users_approve`.`id_user`
+GROUP BY `no_put_away`', [], false)
+ 3 APPPATH\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-20 02:37:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'passwordbaru', 'fulfillment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-12-20 02:37:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_away`, MAX(putaway.date_processed) as date_process, `users`.`name` as `processed_by_name`, `users_approve`.`name` as `approve_by_name`
+FROM `putaway`
+JOIN `users` ON `putaway`.`processed_by` = `users`.`id_user`
+JOIN `users` as `users_approve` ON `putaway`.`approve_by` = `users_approve`.`id_user`
+GROUP BY `no_put_away`', [], false)
+ 3 APPPATH\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+ERROR - 2023-12-20 02:38:35 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fulfillment' in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'password_baru', 'fulfillment', 3306, '', 0)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#4 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#7 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fulfillment' in C:\xampp\htdocs\fulfilment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fulfilment\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fulfilment\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_...', Array, false)
+#3 C:\xampp\htdocs\fulfilment\app\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+#5 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+#6 C:\xampp\htdocs\fulfilment\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\fulfilment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\fulfilment\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-12-20 02:38:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fulfillment'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `no_put_away`, MAX(putaway.date_processed) as date_process, `users`.`name` as `processed_by_name`, `users_approve`.`name` as `approve_by_name`
+FROM `putaway`
+JOIN `users` ON `putaway`.`processed_by` = `users`.`id_user`
+JOIN `users` as `users_approve` ON `putaway`.`approve_by` = `users_approve`.`id_user`
+GROUP BY `no_put_away`', [], false)
+ 3 APPPATH\Controllers\Page.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')
+CRITICAL - 2023-12-20 08:43:52 --> Undefined variable: navbarConfig
+in APPPATH\Views\widgets\navbar.php on line 54.
+ 1 APPPATH\Views\widgets\navbar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: navbarConfig', 'C:\\xampp\\htdocs\\fulfilment\\app\\Views\\widgets\\navbar.php', 54, [...])
+ 2 APPPATH\Views\put_away.php(21): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\widgets\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\fulfilment\\app\\Views\\put_away.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('put_away', [], true)
+ 6 APPPATH\Controllers\Page.php(43): view('put_away', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): APP\Controllers\Page->put_away()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(APP\Controllers\Page))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\fulfilment\\public\\index.php')

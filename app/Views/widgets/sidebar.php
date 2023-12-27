@@ -1,135 +1,201 @@
 <style>
-     body {
-            font-family: "Lato", sans-serif;
-        }
+    body {
+        font-family: "Lato", sans-serif;
+    }
 
+    .sidebar.active {
+        width: 127px;
+    }
+
+    #main.open {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 127px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #2F395C;
+        overflow-x: hidden;
+        transition: width .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .close-btn {
+        color: #fff;
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        display: none;
+        /* Sembunyikan secara default */
+    }
+
+    .sidebar a {
+        font-weight: 400;
+        padding-top: 45px;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        margin-left: 127px;
+        /* background-color:#FAFAFA ; */
+    }
+
+    /* Hide sidebar on smaller screens */
+    @media (max-width: 768px) {
         .sidebar {
-            height: 100%;
-            width: 127px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #2F395C;
-            overflow-x: hidden;
-            padding-top: 60px;
+            width: 0;
         }
-
-        .sidebar a {
-            font-weight: 400;            
-            padding-top: 53px;
-            text-decoration: none;
-            font-size: 14px;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-
 
         #main {
-            transition: margin-left .5s;
-            padding: 16px;
-            margin-left: 127px;
-            /* background-color:#FAFAFA ; */
+            margin-left: 0;
         }
 
-        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-        @media screen and (max-height: 450px) {
-            .sidebar {
-                padding-top: 15px;
-            }
-
-            .sidebar a {
-                font-size: 18px;
-            }
+        .sidebar.active {
+            width: 127px;
         }
 
-        .dataTables_wrapper {
-            margin-top: 47px;
-            width: 95%;
-            margin-left: auto;
-            margin-right: auto;
-            /* Adjust the margin-top value as needed */
+        .close-btn {
+            display: block;
+            /* Tampilkan saat sidebar aktif */
         }
 
-        .card-deck {
-            display: inline-flex;
-            flex-wrap: nowrap;
-            /* Agar card-deck tidak wrap ke baris baru */
-            overflow-x: auto;
-
+        .icon {
+            display: none;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            z-index: 2;
         }
-
-        .card-body {
-            width: 192px;
-            height: 120px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-    .image_home {
-        position: relative;
-        width: 100px;
-        height: 100px;
     }
 
-    .image_one,
-    .image_two {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
 
+    /* Tombol fa-bars */
+    .icon {
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
     }
 
-    #imageOne {
-        z-index: 1;
+    /* CSS Anda lainnya */
+
+    ul.list-unstyled.components li a span {
+        font-size: 16px;
+        /* Atur ukuran font sesuai kebutuhan Anda */
     }
 
-    #imageTwo {
-        z-index: 0;
-        
+    .top-menu,
+    .bottom-menu {
+        flex: 1;
+        display: flex;
+        flex-direction: column;   
+        padding: 10px;
+          
     }
+
 </style>
 
+
 <div id="mySidebar" class="sidebar">
-        <ul class="list-unstyled components">
+    <button class="close-btn" onclick="closeSidebar()">&times;</button>
+    <ul class="list-unstyled components">
+        <div class="top-menu">
             <li>
                 <a href="<?= base_url('index.php/Page/home') ?>">
                     <img src="<?= base_url('images/put_away.png') ?>" alt="Scan Ibound">
-                    <span style="padding-top: 8px;">Home</span>
+                    <span style="padding-top: 2px;">Fullfilment</span>
+                </a>
+            </li>
+            <li>
+                <a href="<?= base_url('index.php/Page/home') ?>">
+                    <img src="<?= base_url('images/put_away.png') ?>" alt="Scan Ibound">
+                    <span style="padding-top: 2px;">Home</span>
                 </a>
             </li>
             <li>
                 <a href="<?= base_url('index.php/Page/scan_inbound') ?>">
                     <img src="<?= base_url('images/scan_inbound.png') ?>" alt="Scan Ibound">
-                    <span style="padding-top: 8px;">Scan Ibound</span>
+                    <span style="padding-top: 2px;">Scan Ibound</span>
                 </a>
             </li>
             <li>
                 <a href="<?= base_url('index.php/Page/put_away') ?>">
                     <img src="<?= base_url('images/put_away.png') ?>" alt="Put Away">
-                    <span style="padding-top: 8px;">Put Away</span>
+                    <span style="padding-top: 2px;">Put Away</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <img src="<?= base_url('images/pick.png') ?>" alt="Pick and Pack">
-                    <span style="padding-top: 8px;">Pick and Pack</span>
+                    <span style="padding-top: 2px;">Pick and Pack</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <img src="<?= base_url('images/dispatcher.png') ?>" alt="Dispatcher">
-                    <span style="padding-top: 8px;">Dispatcher</span>
+                    <span style="padding-top: 2px;">Dispatcher</span>
                 </a>
             </li>
+        </div>
 
-        </ul>
-    </div>
+        <div class="bottom-menu">
+            <li>
+                <div class="garis" style="  margin-top:123px;  border: 1px white solid"></div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<?= base_url('images/master_barang.png') ?>" alt="Dispatcher">
+                    <span style="padding-top: 2px;">Master Barang</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<?= base_url('images/setting.png') ?>" alt="Dispatcher">
+                    <span style="padding-top: 2px;">Setting</span>
+                </a>
+            </li>
+        </div>
+    </ul>
+</div>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.querySelector(".sidebar");
+        var mainContent = document.getElementById("main");
+
+        // Toggle class 'active' pada sidebar dan 'open' pada main content
+        sidebar.classList.toggle("active");
+        mainContent.classList.toggle("open");
+    }
+
+    function closeSidebar() {
+        var sidebar = document.querySelector(".sidebar");
+        var mainContent = document.getElementById("main");
+
+        // Hapus class 'active' pada sidebar dan 'open' pada main content
+        sidebar.classList.remove("active");
+        mainContent.classList.remove("open");
+    }
+</script>
